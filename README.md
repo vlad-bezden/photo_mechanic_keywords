@@ -16,7 +16,7 @@ food, 2
 
 ## Run
 ``` shell
-python3 main.py "pm_keywords.csv"
+python3 python3 pmkeywords/main.py "pm_keywords.csv"
 ```
 The output file, `keywords_output.csv`, will be created in the directory where the program is being executed.
 
@@ -31,7 +31,8 @@ The output file, `keywords_output.csv`, will be created in the directory where t
 pip install -r requirements.txt
 ```
 
-3. Run `ruff` to format file
+3. Run `ruff` to format and lint code
 ``` shell
-ruff format .
+ruff format pmkeywords
+ruff check --fix pmkeywords
 ```

@@ -1,0 +1,9 @@
+[tool.ruff]
+line-length = 88  # Adjust as needed
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]  # Enable import sorting
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+combine-as-imports = true
